@@ -149,6 +149,7 @@
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    text-align: center;
    background-position: 30% 50%;
+   color: black;
  }
 
  #coding {
@@ -172,8 +173,16 @@
    font-size: 16pt;
  }
 
-.design_btn {
+.big_btn {
   border: none;
   padding: 0px;
   background: none;
+  cursor: pointer;
+}
+a.design_dev_btn_anchor {
+  text-decoration: none;
+}
+
+a.design_dev_btn_anchor:visited {
+  text-decoration: none;
 }
