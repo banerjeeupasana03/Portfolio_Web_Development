@@ -43,5 +43,9 @@
   background-size: contain;
   width: 100px;
   height: 100px;
+}
 
+.image-dim {
+  width: 800px;
+  height: 500px;
 }
