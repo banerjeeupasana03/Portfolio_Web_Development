@@ -1,0 +1,47 @@
+#portfolio {
+  color: goldenrod;
+}
+
+
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+
+  height: 70vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#design_vectors {
+
+  height: 60vh;
+  width: 80vw;
+  text-align: center;
+}
+
+.arrow-btn-style {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+
+#btn_left {
+  background-image: url(../img/btn-left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+
+}
+
+#btn_right {
+  background-image: url(../img/btn-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+
+}
