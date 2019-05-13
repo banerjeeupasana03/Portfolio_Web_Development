@@ -1,70 +1,67 @@
 body {
-   width: 100%;
-   height: 100%;
-   position: relative;
-   background-color: antiquewhite;
-   display: flex;
-   flex: 1;
-   flex-grow: 1;
-   flex-direction: column;
-   background-image: url(../img/bg.svg);
-   background-repeat: no-repeat;
-   background-size: cover;
- }
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: antiquewhite;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-direction: column;
+  background-image: url(../img/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
- #head {
-   /*   background-color: #174768;*/
-   height: 100px;
-   width: 100%;
-   z-index: 1;
-   position: relative;
+#head {
+  /*   background-color: #174768;*/
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
 
+#logo {
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 10px;
+}
 
- }
+#name {
+  position: relative;
+  display: inline-block;
+  padding-left: 95px;
+  padding-top: 25px;
+  color: black;
+  font-family: "Cormorant Garamond", serif;
+}
 
- #logo {
-   position: absolute;
-   padding-top: 10px;
-   padding-left: 10px;
- }
+#menu-options {
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 0px;
+}
 
- #name {
-   position: relative;
-   display: inline-block;
-   padding-left: 95px;
-   padding-top: 25px;
-   color: black;
-   font-family: 'Cormorant Garamond', serif;
+/*creating horizontal menu bar*/
 
- }
+.menu {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  z-index: 1;
+}
 
- #menu-options {
-   overflow: hidden;
-   position: absolute;
-   z-index: 2;
-   top: 30px;
-   right: 0px;
- }
+.menu:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
 
- /*creating horizontal menu bar*/
-
- .menu {
-   float: right;
-   color: black;
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
-   font-size: 17px;
-   z-index: 1;
- }
-
- .menu:hover {
-   background-color: #ddd;
-   color: black;
-   cursor: pointer;
- }
-
- .menu.active {
-   background-color: #4CAF50;
-   color: white;
- }
+.menu.active {
+  background-color: #4caf50;
+  color: white;
+}

@@ -1,0 +1,53 @@
+#form_container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#form_container form#contact_form {
+  width: 40vw;
+  background: #F8F8FF;
+  border: 10px solid #F15A23;
+}
+
+#form_container .input-container {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+  padding: 5px;
+}
+
+#form_container form input,
+#form_container form textarea {
+  height: 50px;
+  display: block;
+  width: 80%;
+  background: transparent;
+  font-family: Raleway-SemiBold;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.2;
+  padding: 0 25px;
+}
+
+#form_container .submit-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+  padding: 5px;
+}
+
+#form_container .submit-container input[type="submit"] {
+  width: 200px;
+  background-color: #333333;
+  color: white;
+}
