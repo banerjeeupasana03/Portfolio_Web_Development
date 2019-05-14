@@ -4,9 +4,15 @@ function MotionGraphicsAndAnimationPageFunctionality() {
       "motion_graphics_and_animation_gif"
     );
     var image =
+      "<a href='" +
+      motionGraphicsAndAnimationProjects[pos].webpage +
+      "?pos=" +
+      pos +
+      "'>" +
       "<img src='" +
       motionGraphicsAndAnimationProjects[pos].image +
-      "' class='image-dim' />";
+      "' class='image-dim' />" +
+      "</href>";
     devDisplayDiv.style.opacity = 0;
     setTimeout(function() {
       devDisplayDiv.innerHTML = image;

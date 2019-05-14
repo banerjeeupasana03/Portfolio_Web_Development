@@ -17,4 +17,8 @@ function App() {
   ) {
     MotionGraphicsAndAnimationPageFunctionality();
   }
+
+  if (window.location.href.match("motion_graphics_video.html") != null) {
+    MotionGraphicsVideoFunctionality();
+  }
 }

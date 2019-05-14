@@ -67,11 +67,13 @@ motionGraphicsAndAnimationProjects = [
   {
     name: "transition_masking_animation",
     image: "img/transition_masking_animation.gif",
-    video: "img/transition_masking_animation.mp4"
+    video: "img/transition_masking_animation.mp4",
+    webpage: "motion_graphics_video.html"
   },
   {
     name: "story_telling_mythbusters",
     image: "img/story_telling_mythbusters.gif",
-    video: "img/story_telling_mythbusters.mp4"
+    video: "img/story_telling_mythbusters.mp4",
+    webpage: "motion_graphics_video.html"
   }
 ];
