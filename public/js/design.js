@@ -1,7 +1,4 @@
 function DesignPageFunctionality() {
-
-  // organizing all the vector graphics in a js array
-
   var imageArray = [
     {
       name: "vector1",
@@ -49,27 +46,42 @@ function DesignPageFunctionality() {
     }
   ];
 
-  function carousel() {
-    var buttonLeft = document.getElementById('btn_left');
-    var buttonRight = document.getElementById('btn_right');
-    var designDisplayDiv = document.getElementById('design_vectors');
-    
-    var image = "<img src='" + imageArray[0].image + "' class='image-dim' />";
-    designDisplayDiv.innerHTML = image;
-    var i = 1;
-
-    buttonRight.addEventListener("click", function () {
-      var imageDisplay = imageArray[Math.abs(i)];
-      i = (i + 1) % imageArray.length;
-      var image = "<img src='" + imageDisplay.image + "' class='image-dim' />";
+  function displayImage(pos) {
+    var designDisplayDiv = document.getElementById("design_vectors");
+    var image = "<img src='" + imageArray[pos].image + "' class='image-dim' />";
+    designDisplayDiv.style.opacity = 0;
+    setTimeout(function() {
       designDisplayDiv.innerHTML = image;
+      designDisplayDiv.style.opacity = 1;
+    }, 1000);
+  }
+
+  function carousel() {
+    var i = 0;
+    var buttonLeft = document.getElementById("btn_left");
+    var buttonRight = document.getElementById("btn_right");
+    displayImage(i);
+
+    buttonRight.addEventListener("click", function() {
+      i = i + 1;
+      if (i >= imageArray.length) {
+        i = imageArray.length - 1;
+      }
+      if (i < 0) {
+        i = 0;
+      }
+      displayImage(i);
     });
 
-    buttonLeft.addEventListener("click", function () {
-      var imageDisplay = imageArray[Math.abs(i)];
-      i = (i - 1) % imageArray.length;
-      var image = "<img src='" + imageDisplay.image + "' class='image-dim' />";
-      designDisplayDiv.innerHTML = image;
+    buttonLeft.addEventListener("click", function() {
+      i = i - 1;
+      if (i >= imageArray.length) {
+        i = imageArray.length - 1;
+      }
+      if (i < 0) {
+        i = 0;
+      }
+      displayImage(i);
     });
   }
   carousel();
