@@ -4,9 +4,19 @@ function MotionGraphicsVideoFunctionality() {
   var position = parseInt(url.searchParams.get("pos"));
   var source = motionGraphicsAndAnimationProjects[position].video;
   element.innerHTML =
-    '<video width="320" height="240" autoplay>' +
+    '<video id="current_video" width="640" height="480" autoplay>' +
     '<source src="' +
     source +
     '" type="video/mp4">' +
     "</video>";
+}
+
+function PlayPauseVideo() {
+  var videoElm = document.getElementById("current_video");
+  if (videoElm.paused) {
+    videoElm.play();
+  } else {
+    videoElm.pause();
+  }
+  return false;
 }
