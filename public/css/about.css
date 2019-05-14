@@ -1,3 +1,7 @@
+#about {
+  color: goldenrod;
+}
+
 #about_me_container {
   display: flex;
   width: 100%;

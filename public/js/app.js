@@ -11,4 +11,10 @@ function App() {
   if (window.location.href.match("development.html") != null) {
     DevelopmentPageFunctionality();
   }
+
+  if (
+    window.location.href.match("motion_graphics_and_animation.html") != null
+  ) {
+    MotionGraphicsAndAnimationPageFunctionality();
+  }
 }

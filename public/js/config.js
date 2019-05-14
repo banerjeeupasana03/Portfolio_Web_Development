@@ -62,3 +62,16 @@ developmentProjects = [
     website: "https://westpointhotel.upasanamukherjee.ca/"
   }
 ];
+
+motionGraphicsAndAnimationProjects = [
+  {
+    name: "transition_masking_animation",
+    image: "img/transition_masking_animation.gif",
+    video: "img/transition_masking_animation.mp4"
+  },
+  {
+    name: "story_telling_mythbusters",
+    image: "img/story_telling_mythbusters.gif",
+    video: "img/story_telling_mythbusters.mp4"
+  }
+];
