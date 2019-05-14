@@ -2,7 +2,13 @@ function DevelopmentPageFunctionality() {
   function displayGif(pos) {
     var devDisplayDiv = document.getElementById("development_gifs");
     var image =
-      "<img src='" + developmentProjects[pos].image + "' class='image-dim' />";
+      "<a target='_blank' href='" +
+      developmentProjects[pos].website +
+      "'>" +
+      "<img src='" +
+      developmentProjects[pos].image +
+      "' class='image-dim' />" +
+      "</href>";
     devDisplayDiv.style.opacity = 0;
     setTimeout(function() {
       devDisplayDiv.innerHTML = image;
