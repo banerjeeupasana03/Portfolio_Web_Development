@@ -21,4 +21,8 @@ function App() {
   if (window.location.href.match("motion_graphics_video.html") != null) {
     MotionGraphicsVideoFunctionality();
   }
+
+  if (window.location.href.match("contact.html") != null) {
+    ContactPageFunctionality();
+  }
 }
