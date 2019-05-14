@@ -4,7 +4,7 @@ function MotionGraphicsVideoFunctionality() {
   var position = parseInt(url.searchParams.get("pos"));
   var source = motionGraphicsAndAnimationProjects[position].video;
   element.innerHTML =
-    '<video id="current_video" width="640" height="480" autoplay>' +
+    '<video id="current_video" width="80%" height="60%" autoplay>' +
     '<source src="' +
     source +
     '" type="video/mp4">' +
